@@ -1,0 +1,92 @@
+body {
+  background: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.todo-container {
+  background: #fff;
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#todo-input, #priority-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#todo-input {
+  flex: 1;
+}
+
+#add-btn {
+  padding: 8px 16px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background: #1769aa;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  border-left: 4px solid transparent;
+  background: #fafafa;
+  margin-bottom: 4px;
+}
+
+/* 優先度ごとの色分け */
+.priority-high {
+  background: #ffe0e0;
+  border-left-color: #e53935;
+}
+
+.priority-medium {
+  background: #fffbe0;
+  border-left-color: #fbc02d;
+}
+
+.priority-low {
+  background: #e0ffe0;
+  border-left-color: #43a047;
+}
+
+.delete-btn {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #af3b3b;
+}
